@@ -15,9 +15,11 @@ DIY Platform merupakan aplikasi untuk buat kreasi tangan dari 5 author. Buatlah 
 Terdapat data untuk author dan post pada aplikasi, diketahui bahwa setiap author dapat membuat lebih dari satu post sementara satu post hanya dibuat oleh satu author. Buatlah tabel menggunakan pool.query versi callback pada file setup.js untuk kedua tabel berikut:
 
 Table Authors
+<br>
 <img width="371" alt="authors" src="https://user-images.githubusercontent.com/22075597/183536220-c1f12a74-f44d-4ba2-be98-ef32e423ffc3.png">
 
 Table Posts
+<br>
 <img width="373" alt="posts" src="https://user-images.githubusercontent.com/22075597/183536228-d5932073-32bf-4c86-bd4d-52d6973fa99f.png">
 
 Untuk mempermudah mendevelop sebuah aplikasi yang memiliki database kita akan memanfaatkan dummy data ke database, untuk dummy datanya pada repo folder data
