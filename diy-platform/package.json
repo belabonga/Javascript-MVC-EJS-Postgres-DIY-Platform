@@ -1,0 +1,24 @@
+{
+  "name": "diy-platform",
+  "version": "1.0.0",
+  "description": "Merupakan challnege yang dinilai 💯 ```txt Terbagi 2 Deadline : - Part 1 W2D6 18.00 WIB - Part 2 W3D2 09.00 WIB - Final Deadline W3D2 13.00 WIB ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hck-49-witty-fox/diy-platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hck-49-witty-fox/diy-platform/issues"
+  },
+  "homepage": "https://github.com/hck-49-witty-fox/diy-platform#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

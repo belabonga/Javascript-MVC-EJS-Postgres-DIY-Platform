@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><%= errors.err %></p>
+    <form action="/posts/add" method="post">
+        Title : <input type="text" name="title">
+        <br>
+        estimatedTime : <input type="number" name="estimatedTime">
+        <br>
+        imageUrl : <input type="text" name="imageUrl">
+        <br>
+        createdDate : <input type="date" name="createdDate">
+        <br>
+        description :
+        <br>
+        <textarea type="text" name="description">create description here...</textarea>
+        <br>
+        <select name="author">
+            <option selected disabled>Choose...</option>
+            <% data.forEach(el => { %>
+                <option value="<%= el.id %>">
+                    <%= el.fullName %>
+                </option>
+            <% }) %>      
+        </select>
+        <br>
+        <select name="difficulty">
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+        </select>
+        <br>
+        <button type="submit">SUBMIT</button>
+    </form>
+    
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/posts/<%= post.id %>/edit" method="post">
+        Title : <input type="text" name="title" value="<%= post.title %>">
+        <br>
+        estimatedTime : <input type="number" name="estimatedTime" value="<%= post.estimatedTime %>" >
+        <br>
+        imageUrl : <input type="text" name="imageUrl" value="<%= post.imageUrl %>">
+        <br>
+        createdDate : <input type="date" name="createdDate" value="<%= post.formatCreatedDate %>">
+        <br>
+        description : <input type="text" name="description" value="<%= post.description %>">
+
+        <select name="author">
+            <option  disabled>Choose...</option>
+            <% authors.forEach(el => { %>
+                <option value="<%= el.id %> <%= el.id==post.AuthorId ? "selected" : '' %>">
+                    <%= el.fullName %>
+                </option>
+            <% }) %>      
+        </select>
+        <select name="difficulty">
+            <option value="Easy" <%= post.difficulty=="Easy" ? "selected" : ''%> >Easy</option>
+            <option value="Medium" <%= post.difficulty=="Medium" ? "selected" : ''%>>Medium</option>
+            <option value="Hard" <%= post.difficulty=="Hard" ? "selected" : ''%>>Hard</option>
+        </select>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+    
+
+    
+    
+</body>
+</html>
