@@ -6,6 +6,15 @@
 - Mampu membuat aplikasi website sederhana dengan express, ejs dan node-postgres
 - Mampu membuat mini ORM untuk fitur CRUD
 
+## Competencies and Tools :
+- OOP
+- MVC Callback
+- Schema
+- SQL
+- Node Postgres
+- Express
+- EJS
+
 ## Summary
 
 DIY Platform merupakan aplikasi untuk buat kreasi tangan dari 5 author. Buatlah aplikasi DIY Platform, aplikasi ini dapat melakukan proses CRUD terhadap postingan yang mereka buat, namun sebelum memulai ngoding kamu harus memahami soal challenge terlebih dahulu dan membuat schema database atau ERD. Kerjakan dengan nama database “DIYPlatform”
